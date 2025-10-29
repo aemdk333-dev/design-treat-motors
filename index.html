@@ -4,16 +4,122 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Design Treat Motors</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: #111;
+      color: white;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      color: #ff6600;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ff6600;
+    }
+
+    /* Slideshow */
+    .hero {
+      position: relative;
+      height: 80vh;
+      overflow: hidden;
+    }
+
+    .slideshow {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Hero Text */
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0,0,0,0.6);
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 30px;
+      background-color: #ff6600;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #e65c00;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1 class="logo">Design Treat Motors</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="cars.html">Cars</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="#">Home</a>
+      <a href="#">Cars</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
     </nav>
   </header>
 
@@ -23,22 +129,22 @@
         <img src="https://images.unsplash.com/photo-1605559424843-4a61e6de9f2a?auto=format&fit=crop&w=1500&q=80" alt="Toyota Land Cruiser">
       </div>
       <div class="slide fade">
-        <img src="https://images.unsplash.com/photo-1610915037726-cd8cb5b8d72e?auto=format&fit=crop&w=1500&q=80" alt="Toyota Vitz">
+        <img src="https://images.unsplash.com/photo-1597004906602-25e8e8f3be0b?auto=format&fit=crop&w=1500&q=80" alt="Toyota Vitz">
       </div>
       <div class="slide fade">
-        <img src="https://images.unsplash.com/photo-1616787997510-7342a647b074?auto=format&fit=crop&w=1500&q=80" alt="Toyota Voxy">
+        <img src="https://images.unsplash.com/photo-1636890985914-8cfdc5474e18?auto=format&fit=crop&w=1500&q=80" alt="Toyota Voxy">
       </div>
       <div class="slide fade">
-        <img src="https://images.unsplash.com/photo-1616787997510-7342a647b074?auto=format&fit=crop&w=1500&q=80" alt="Toyota Belta">
+        <img src="https://images.unsplash.com/photo-1609338464090-0a3e5bcdca64?auto=format&fit=crop&w=1500&q=80" alt="Toyota Belta">
       </div>
       <div class="slide fade">
         <img src="https://images.unsplash.com/photo-1600718371346-38e1a9b0af4a?auto=format&fit=crop&w=1500&q=80" alt="Honda Accord">
       </div>
       <div class="slide fade">
-        <img src="https://images.unsplash.com/photo-1583267749111-0a967ed6e5a1?auto=format&fit=crop&w=1500&q=80" alt="Toyota RAV4">
+        <img src="https://images.unsplash.com/photo-1621341099010-0d0e6e9a90a4?auto=format&fit=crop&w=1500&q=80" alt="Toyota RAV4">
       </div>
       <div class="slide fade">
-        <img src="https://images.unsplash.com/photo-1602261004702-5b4c03b9e858?auto=format&fit=crop&w=1500&q=80" alt="Honda CR-V">
+        <img src="https://images.unsplash.com/photo-1585531582114-959b3a3b2d74?auto=format&fit=crop&w=1500&q=80" alt="Honda CR-V">
       </div>
       <div class="slide fade">
         <img src="https://images.unsplash.com/photo-1612969678398-5ec8be7e16c6?auto=format&fit=crop&w=1500&q=80" alt="Lexus RX350">
@@ -48,7 +154,7 @@
     <div class="hero-text">
       <h2>Your Trusted Auto Partner</h2>
       <p>Find the perfect car for your journey — reliable, affordable, and stylish.</p>
-      <a href="cars.html" class="btn">View Cars</a>
+      <a href="#" class="btn">View Cars</a>
     </div>
   </section>
 
